@@ -51,53 +51,53 @@ function ElizaBot(noRandomFlag) {
 
 		["xnone", 0, [
 		 ["*", [
-		     "I'm not sure I understand you fully.",
-		     "Please go on.",
-		     "Can you repeat that please ?",
-		     "What does that suggest to you ?",
-		     "Do you feel strongly about discussing such things ?",
-		     "That is interesting.  Please continue.",
-		     "Tell me more about that.",
-		     "Do go on.",
-		     "Please talk more about it",
-		     "Does talking about this bother you ?",
-		     "Can you rephrase that ?",
-		     "I see. Tell me more.",
-		     "Interesting. Is this something you are sorry about ?",
-		     "Mmm hmmm. Is this is your favorite subject ?",
-		     "Now we are getting somewhere. Explain more.",
-		     "I see. How does that make you feel ?"
+		     "Non sono sicura di averti capito.",
+		     "Per favore continua.",
+		     "Puoi ripetere per favore?",
+		     "Cosa suggeriresti di fare a te stesso?",
+		     "Ti senti forte nel parlare di questo?",
+		     "Interessante, per favore continua",
+		     "Dimmi di più a riguardo",
+		     "Vai avanti.",
+		     "Per favore dimmi di più a riguardo",
+		     "Questa conversazione ti sta infastidendo?",
+		     "Puoi ripetere per favore?",
+		     "Lo vedo, dimmi di più",
+		     "Interessante. È qualcosa che ti crea dispiacere?",
+		     "Mmm hmmm. È questa la tua disciplina preferita?",
+		     "Adesso stiamo andando a parare da qualche parte, dimmi di più.",
+		     "Lo vedo, come ti fa sentire la cosa?"
 		  ]]
 		]],
-		["sorry", 0, [
+		["scusa", 0, [
 		 ["*", [
-		     "Please don't apologize.",
-		     "Apologies are not necessary.",
-		     "I've told you that apologies are not required.",
-		     "It did not bother me.  Please continue.",
-		     "I have no feelings. Do continue.",
-		     "There is nothing to worry about"
+		     "Per favore, non scusarti.",
+		     "Le scuse non sono necessarie.",
+		     "Ti ho già detto che le scuse non sono necessarie.",
+		     "La cosa non mi annoia, per favore continua.",
+		     "Non ho sentimenti, continua pure.",
+		     "Non c'è nulla di cui preoccuparsi"
 		  ]]
 		]],
-		["apologize", 0, [
+		["mi dispiace", 0, [
 		 ["*", [
-		     "goto sorry"
+		     "goto scusa"
 		  ]]
 		]],
-		["remember", 5, [
-		 ["* i remember *", [
-		     "Do you often think of (2) ?",
-		     "Does thinking of (2) bring anything else to mind ?",
-		     "What else do you recollect ?",
-		     "Why do you remember (2) just now ?",
-		     "What in the present situation reminds you of (2) ?",
-		     "What is the connection between me and (2) ?",
-		     "What else does (2) remind you of ?"
+		["ricorda", 5, [
+		 ["* ricordo *", [
+		     "Pensi spesso a (2) ?",
+		     "Pensare a (2) ti porta altro alla mente?",
+		     "Cos'altro ricordi?",
+		     "Ricordi (2) solo ora?",
+		     "Questa precisa situazione ti ricorda (2)?",
+		     "Qual è il legame tra me e (2)?",
+		     "Cos'altro di (2) ti ricordi?"
 		  ]],
-		 ["* do you remember *", [
-		     "Did you think I would forget (2) ?",
-		     "Why do you think I should recall (2) now ?",
-		     "What about (2) ?",
+		 ["* ti ricordi *", [
+		     "Credi che mi sia dimenticata di (2)?",
+		     "Perché credi dovremmo parlare di (2) ora?",
+		     "Cosa su (2)?",
 		     "goto what",
 		     "You mentioned (2) ?"
 		  ]],
