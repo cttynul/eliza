@@ -22,8 +22,7 @@ exports.bye = function () {
 function ElizaBot(noRandomFlag) {
 
 	this.elizaInitials = [
-`
-======================================================================
+`======================================================================
                 EEEEEE  LL      IIII  ZZZZZZZ   AAAAA 
                 EE      LL       II       ZZ   AA   AA
                 EEEEE   LL       II     ZZZ    AAAAAAA
@@ -35,7 +34,7 @@ function ElizaBot(noRandomFlag) {
  Questa implementazione da Norbert Landsteiner nel 2005.
  Tradotto in italiano, alla bene e meglio, da cttynul nel 2020.
 
-ELIZA > Come stai? Parlami dei tuoi problemi`];
+ELIZA > Ciao sono Eliza.`];
 
 	this.elizaKeywords = [
 		["xnone", 0, [
@@ -213,7 +212,7 @@ ELIZA > Come stai? Parlami dei tuoi problemi`];
 		     "Credi di essere (2) ?",
 		     "Ti piace essere (2) ?",
 		     "Ti piacerebbe che ti dica che tu sia (2) ?",
-		     "Cosa significherebbe se fossi (2) ?",
+		     "Cosa significa per te essere (2) ?",
 		     "goto cosa"
 		  ]],
 		 ["* io sono*", [
@@ -553,12 +552,12 @@ ELIZA > Come stai? Parlami dei tuoi problemi`];
 	];
 
 	this.elizaFinals = [
-		"Ciao! È stato bello parlare con te.",
+		"ELIZA > Ciao! È stato bello parlare con te.",
 		// additions (not original)
-		"Ciao ciao! È stata davvero una bella conversazione.",
-		"Arrivederci.  Alla prossima sessione.",
-		"È stata una bella conversazione no? Però il nostro tempo è finito. Arrivederci.",
-		"Forse potremmo approfondire qualcosa nella prossima sessione?  Arrivederci."
+		"ELIZA > Ciao ciao! È stata davvero una bella conversazione.",
+		"ELIZA > Arrivederci.  Alla prossima sessione.",
+		"ELIZA > È stata una bella conversazione no? Però il nostro tempo è finito. Arrivederci.",
+		"ELIZA > Forse potremmo approfondire qualcosa nella prossima sessione?  Arrivederci."
 	];
 
 	this.elizaQuits = [
@@ -941,12 +940,12 @@ ElizaBot.prototype.getInitial = function() {
 }
 
 var elizaFinals = [
-	"Ciao! È stato bello parlare con te.",
+	"ELIZA > Ciao! È stato bello parlare con te.",
 	// additions (not original)
-	"Ciao ciao! È stata davvero una bella conversazione.",
-	"Arrivederci.  Alla prossima sessione.",
-	"È stata una bella conversazione no? Però il nostro tempo è finito. Arrivederci.",
-	"Forse potremmo approfondire qualcosa nella prossima sessione?  Arrivederci."
+	"ELIZA > Ciao ciao! È stata davvero una bella conversazione.",
+	"ELIZA > Arrivederci.  Alla prossima sessione.",
+	"ELIZA > È stata una bella conversazione no? Però il nostro tempo è finito. Arrivederci.",
+	"ELIZA > Forse potremmo approfondire qualcosa nella prossima sessione?  Arrivederci."
 ];
 
 

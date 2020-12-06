@@ -6,7 +6,7 @@ function say(question) {
   let reply = elizabot.reply(question) // returns a eliza-like reply based on the message text passed into it
   console.log("TU > " + question);
   console.log("ELIZA > " + reply);
-  console.log('---');
+  console.log("[...]");
 }
 
 say("Ciao")
