@@ -1,14 +1,25 @@
-# Eliza Bot
-
-(Copied from [elisabot-js](https://github.com/brandongmwong/elizabot-js))
+# Eliza 
+Traduzione della versione originale, disponibile a questo link [elisabot-js](https://github.com/brandongmwong/elizabot-js), nel linguaggio degli spaghetti e delle pappardelle.
 
 ## What is this?
 
-![Eliza](eliza.png)
+```
+======================================================================
+                EEEEEE  LL      IIII  ZZZZZZZ   AAAAA 
+                EE      LL       II       ZZ   AA   AA
+                EEEEE   LL       II     ZZZ    AAAAAAA
+                EE      LL       II    ZZ      AA   AA
+                EEEEEE  LLLLLL  IIII  ZZZZZZZ  AA   AA
+======================================================================           
+ Eliza è la parodia di uno psicoterapeuta Rogersiano.
+ Il software originale è stato scritto da Joseph Weizenbaum nel 1966.
+ Questa implementazione da Norbert Landsteiner nel 2005.
+ Tradotto in italiano, alla bene e meglio, da cttynul nel 2020.
+```
 
-* JavasScript bot based on Eliza - www.masswerk.at/elizabot and http://en.wikipedia.org/wiki/ELIZA
+Bot scritto in Javascript basato sullo storico bot di **Joseph Weizenbaum** e sulla implementazione di **Norbert Landsteiner**, per altre informazione fare riferimento a http://masswerk.at/elizabot e http://it.wikipedia.org/wiki/ELIZA
 
-> ELIZA is an early natural language processing computer program created from 1964 to 1966[1] at the MIT Artificial Intelligence Laboratory by Joseph Weizenbaum.[2] Created to demonstrate the superficiality of communication between man and machine, Eliza simulated conversation by using a 'pattern matching' and substitution methodology that gave users an illusion of understanding on the part of the program, but had no built in framework for contextualizing events.[3] Directives on how to interact were provided by 'scripts', written originally in MAD-Slip, which allowed ELIZA to process user inputs and engage in discourse following the rules and directions of the script. The most famous script, DOCTOR, simulated a Rogerian psychotherapist and used rules, dictated in the script, to respond with non-directional questions to user inputs. As such, ELIZA was one of the first chatterbots, but was also regarded as one of the first programs capable of passing the Turing Test.
+> ELIZA è un Chatterbot scritto nel 1966 da Joseph Weizenbaum che fa la parodia di un terapeuta Rogersiano, in buona parte rispondendo al paziente con domande ottenute dalla riformulazione delle affermazioni del paziente stesso. Così, per esempio, alla frase "Mi fa male la testa" il programma può ribattere con "Perché dici che ti fa male la testa?" oppure la risposta a "Mia madre mi odia" potrebbe essere "Chi altro nella tua famiglia ti odia?" 
 
 ## Usage
 
@@ -21,59 +32,44 @@ elizabot.bye()            // returns a farewell message
 
 ## Example output
 
-`node index.js`
+`# node index.js`
 
 ```
-Hi
-I see. Tell me more.
----
-I am tired
-Do you know anyone else who is tired ?
----
-Yup
-Do you feel strongly about discussing such things ?
----
-Very likely
-What does that suggest to you ?
----
-no
-You are being a bit negative.
----
-Because it makes me feel better
-Does that reason seem to explain anything else ?
----
-not really
-Please go on.
----
-Maybe we could discuss this moreover in our next session ?   Goodbye.
+======================================================================
+                EEEEEE  LL      IIII  ZZZZZZZ   AAAAA 
+                EE      LL       II       ZZ   AA   AA
+                EEEEE   LL       II     ZZZ    AAAAAAA
+                EE      LL       II    ZZ      AA   AA
+                EEEEEE  LLLLLL  IIII  ZZZZZZZ  AA   AA
+======================================================================           
+ Eliza è la parodia di uno psicoterapeuta Rogersiano.
+ Il software originale è stato scritto da Joseph Weizenbaum nel 1966.
+ Questa implementazione da Norbert Landsteiner nel 2005.
+ Tradotto in italiano, alla bene e meglio, da cttynul nel 2020.
+
+ELIZA > Ciao sono Eliza.
+TU > Ciao
+ELIZA > Come stai? Qualcosa non va ?.
+[...]
+TU > Sono stanco
+ELIZA > Cosa significa per te essere stanco ?
+[...]
+TU > Sì
+ELIZA > Cosa suggeriresti di fare a te stesso?
+[...]
+TU > Più o meno come dici
+ELIZA > In che modo ?
+[...]
+TU > No
+ELIZA > Stai dicendo di no solo per essere pessimista?
+[...]
+TU > Perché mi fa stare meglio
+ELIZA > Adesso stiamo andando a parare da qualche parte, dimmi di più.
+[...]
+TU > Non proprio
+ELIZA > Puoi ripetere per favore?
+[...]
+ELIZA > Forse potremmo approfondire qualcosa nella prossima sessione?  Arrivederci.
 ```
 
-## Example output
-
-`node index.js`
-
-```
-Hi
-Now we are getting somewhere. Explain more.
----
-I am tired
-Do you believe it is normal to be tired ?
----
-Yup
-I'm not sure I understand you fully.
----
-Very likely
-I see. How does that make you feel ?
----
-no
-Are you saying no just to be negative?
----
-Because it makes me feel better
-Is that the real reason ?
----
-not really
-Does talking about this bother you ?
----
-This was a good session, wasn't it -- but time is over now.   Goodbye.
-```
 
