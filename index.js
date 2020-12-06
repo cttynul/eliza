@@ -9,13 +9,13 @@ function say(question) {
   console.log('---');
 }
 
-say("Hi")
-say("I am tired")
-say("Yup")
-say("Very likely")
-say("no")
-say("Because it makes me feel better")
-say("not really")
+say("Ciao")
+say("Sono stanco")
+say("Sì")
+say("Più o meno come dici")
+say("No")
+say("Perché mi fa stare meglio")
+say("Non proprio")
 
 reply = elizabot.bye() // returns a farewell message
 console.log(reply);

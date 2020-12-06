@@ -22,13 +22,12 @@ exports.bye = function () {
 function ElizaBot(noRandomFlag) {
 
 	this.elizaInitials = [
-		"How do you do.  Please tell me your problem.",
-		"Please tell me what's been bothering you.",
-		"Is something troubling you ?",
-		"Im here. Talk to me.",
-		"Talk to me",
-		"Top of the morning to you.",
-		"Thanks for waking me up"
+		"Come stai? Parlami dei tuoi problemi.",
+		"Per favore dimmi cosa ti credi non vada.",
+		"C'è qualcosa che ti turba ?",
+		"Sono qui, dimmi pure.",
+		"Dimmi pure.",
+		"Grazie per avermi svegliato."
 	];
 
 	this.elizaKeywords = [
@@ -547,64 +546,57 @@ function ElizaBot(noRandomFlag) {
 	];
 
 	this.elizaFinals = [
-		"Goodbye.  It was nice talking to you.",
+		"Ciao! È stato bello parlare con te.",
 		// additions (not original)
-		"Goodbye.  This was really a nice talk.",
-		"Goodbye.  I'm looking forward to our next session.",
-		"This was a good session, wasn't it -- but time is over now.   Goodbye.",
-		"Maybe we could discuss this moreover in our next session ?   Goodbye."
+		"Ciao ciao! È stata davvero una bella conversazione.",
+		"Arrivederci.  Alla prossima sessione.",
+		"È stata una bella conversazione no? Però il nostro tempo è finito. Arrivederci.",
+		"Forse potremmo approfondire qualcosa nella prossima sessione?  Arrivederci."
 	];
 
 	this.elizaQuits = [
-		"bye",
-		"goodbye",
-		"done",
-		"exit",
-		"quit"
+		"Arrivederci",
+		"Abbiamo finito",
+		"Esci",
+		"Exit",
+		"Quit"
 	];
 
 	this.elizaPres = [
-		"dont", "don't",
-		"cant", "can't",
-		"wont", "won't",
-		"recollect", "remember",
-		"recall", "remember",
-		"dreamt", "dreamed",
-		"dreams", "dream",
-		"maybe", "perhaps",
-		"certainly", "yes",
-		"machine", "computer",
-		"machines", "computer",
+		"rimembrare", "ricordare",
+		"richiama alla mente", "ricordare",
+		"fantasie", "sogni",
+		"fantasia", "sogno",
+		"certo", "sì",
+		"certamente", "sì",
+		"macchina", "computer",
+		"macchine", "computer",
 		"computers", "computer",
-		"were", "was",
-		"you're", "you are",
-		"i'm", "i am",
-		"same", "alike",
-		"identical", "alike",
-		"equivalent", "alike"
+		"identico", "come",
+		"equivalente", "come"
 	];
 
 	this.elizaPosts = [
-		"am", "are",
-		"your", "my",
-		"me", "you",
-		"myself", "yourself",
-		"yourself", "myself",
-		"i", "you",
-		"you", "I",
-		"my", "your",
-		"i'm", "you are"
+		"tuo", "mio",
+		"io", "tu",
+		"me stesso", "te stesso",
+		"te stesso", "me stesso",
+		"te", "me",
+		"me", "te",
+		"io", "te",
+		"tu", "io",
+		"mio", "tuo",
+		"sono", "sei"
 	];
 
 	this.elizaSynons = {
-		"be": ["am", "is", "are", "was"],
-		"belief": ["feel", "think", "believe", "wish"],
-		"cannot": ["can't"],
+		"essere": ["sono", "è", "sei"],
+		"credere": ["sentire", "pensare", "credere", "desiderare"],
 		"desidero": ["vorrei", "voglio", "ho bisogno"],
-		"everyone": ["everybody", "nobody", "noone"],
-		"family": ["mother", "mom", "father", "dad", "sister", "brother", "wife", "children", "child", "uncle", "aunt", "child"],
-		"happy": ["elated", "glad", "better"],
-		"sad": ["unhappy", "depressed", "sick"]
+		"tutti": ["chiunque", "nessuno"],
+		"famiglia": ["mamma", "madre", "papà", "padre", "sorella", "fratello", "moglie", "figlio", "figli", "zio", "zia", "nonno", "nonna"],
+		"felice": ["contento", "soddisfatto", "meglio"],
+		"triste": ["infelice", "depresso", "giù di morale"]
 	};
 
 	this.noRandom= (noRandomFlag) ? true:false;
@@ -942,12 +934,12 @@ ElizaBot.prototype.getInitial = function() {
 }
 
 var elizaFinals = [
-"Goodbye.  It was nice talking to you.",
-// additions (not original)
-"Goodbye.  This was really a nice talk.",
-"Goodbye.  I'm looking forward to our next session.",
-"This was a good session, wasn't it -- but time is over now.   Goodbye.",
-"Maybe we could discuss this moreover in our next session ?   Goodbye."
+	"Ciao! È stato bello parlare con te.",
+	// additions (not original)
+	"Ciao ciao! È stata davvero una bella conversazione.",
+	"Arrivederci.  Alla prossima sessione.",
+	"È stata una bella conversazione no? Però il nostro tempo è finito. Arrivederci.",
+	"Forse potremmo approfondire qualcosa nella prossima sessione?  Arrivederci."
 ];
 
 
