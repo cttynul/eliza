@@ -22,13 +22,20 @@ exports.bye = function () {
 function ElizaBot(noRandomFlag) {
 
 	this.elizaInitials = [
-		"Come stai? Parlami dei tuoi problemi.",
-		"Per favore dimmi cosa ti credi non vada.",
-		"C'è qualcosa che ti turba ?",
-		"Sono qui, dimmi pure.",
-		"Dimmi pure.",
-		"Grazie per avermi svegliato."
-	];
+`
+======================================================================
+                EEEEEE  LL      IIII  ZZZZZZZ   AAAAA 
+                EE      LL       II       ZZ   AA   AA
+                EEEEE   LL       II     ZZZ    AAAAAAA
+                EE      LL       II    ZZ      AA   AA
+                EEEEEE  LLLLLL  IIII  ZZZZZZZ  AA   AA
+======================================================================		 
+ Eliza è la parodia di uno psicoterapeuta Rogersiano.
+ Il software originale è stato scritto da Joseph Weizenbaum nel 1966.
+ Questa implementazione da Norbert Landsteiner nel 2005.
+ Tradotto in italiano, alla bene e meglio, da cttynul nel 2020.
+
+ELIZA > Come stai? Parlami dei tuoi problemi`];
 
 	this.elizaKeywords = [
 		["xnone", 0, [
