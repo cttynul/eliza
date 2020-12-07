@@ -2,7 +2,8 @@
 <HEAD>
 	<TITLE>Eliza (elizabot.js)</TITLE>
 	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="elizabot.js"></SCRIPT>
-	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="elizadata.js"></SCRIPT>
+  <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="elizadata.js"></SCRIPT>
+  <link rel="stylesheet" type="text/css" href="style.css">
 
 <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
 
@@ -62,7 +63,6 @@ function elizaStep() {
 
 <CENTER>
 <P>&nbsp;</P>
-<H3>Eliza</H3>
 <TABLE BORDER="0" CELLSPACING="10" CELLPADDING="0">
 <FORM NAME="e_form" onsubmit="elizaStep();return false">
 <TR><TD COLSPAN="2"><TEXTAREA NAME="e_display" COLS="70" ROWS="20"></TEXTAREA></TD></TR>
@@ -75,14 +75,11 @@ function elizaStep() {
 </CENTER>
 
 <P>&nbsp;</P>
-<P ALIGN="center">For a comfortable terminal-like interface see the <A HREF="http://www.masswerk.at/elizabot/eliza.html">ELIZA-Terminal</A>.</P>
-<P>&nbsp;</P>
+<!--<P ALIGN="center">For a comfortable terminal-like interface see the <A HREF="http://www.masswerk.at/elizabot/eliza.html">ELIZA-Terminal</A>.</P>
+<P>&nbsp;</P>-->
 <TABLE BORDER="0" CELLSPACING="12" CELLPADDDING="0">
 <TR><TD COLSPAN="2">
-ELIZA is a natural language conversation program described by Joseph Weizenbaum in January 1966 <A HREF="#ELIZA">[1]</A>.<BR>
-It features the dialog between a human user and a computer program representing a mock Rogerian psychotherapist.<BR>
-The original program was implemented on the IBM 7094 of the Project MAC time-sharing system at MIT and was written in MAD-SLIP.<BR><BR>
-This is how Joseph Weizenbaum discussed his choice for a conversation model as it would be found in psychotherapist's session:
+  ELIZA è un Chatterbot scritto nel 1966 da Joseph Weizenbaum che fa la parodia di un terapeuta Rogersiano, in buona parte rispondendo al paziente con domande ottenute dalla riformulazione delle affermazioni del paziente stesso. Così, per esempio, alla frase "Mi fa male la testa" il programma può ribattere con "Perché dici che ti fa male la testa?" oppure la risposta a "Mia madre mi odia" potrebbe essere "Chi altro nella tua famiglia ti odia?"
 <BLOCKQUOTE>
 At this writing, the only serious ELIZA scripts which exist are some which cause
 ELIZA to respond roughly as would certain psychotherapists (Rogerians). ELIZA
@@ -103,7 +100,7 @@ sense of being heard and understood. The speaker furher defends his impression
 partner all sorts of background knowledge, insights and reasoning ability. But
 again, these are the <em>speaker's</em> contribution to the conversation.
 </BLOCKQUOTE>
-For a conversation example given by Joseph Weizenbaum in his article see the <A HREF="eliza_test.html">Eliza Test</A> page.
+Per la conversazione di esempio di Joseph Weizenbaum citata nel suo articolo vai sulla pagina <A HREF="eliza_test.html">Eliza Test</A>.
 </TD></TR>
 <TR><TD COLSPAN="2">&nbsp;</TD></TR>
 <TR><TD COLSPAN="2">
@@ -199,11 +196,12 @@ Note:   &quot;elizaPostTransforms&quot; is not a standard ELIZA feature and was 
 </PRE>
 	<P>Data representations and syntax follow the &quot;canonical&quot; form.<BR>
 	(Since all data is transformed to and matched as regular expressions, you could also use regexps in the keywords and decompositions. Do not use any &quot;*&quot; expressions in decomposition patterns as &quot;*&quot; will be transformed to a regexp-pattern itself.)<BR>
-	The structure of &quot;elizaKeywords&quot; follows the internal data model as described by J. Weizenbaum in his article <A HREF="#ELIZA">[1]</A>.</P>
+	The structure of &quot;elizaKeywords&quot; follows the internal data model as described by J. Weizenbaum in his article.</P>
  
 	<P>&nbsp;<BR>
 	&quot;elizabot.js&quot; by &copy; Norbert Landsteiner 2005;<BR>
-	mass:werk &#150; media environments &lt;<A HREF="http://www.masswerk.at/" TARGET="_blank">http://www.masswerk.at</A>&gt;.</P>
+  mass:werk &#150; media environments &lt;<A HREF="http://www.masswerk.at/" TARGET="_blank">http://www.masswerk.at</A>&gt;.<br>
+  translated in italian by © cttynul 2020;</P>
 	<P>Distribution:<BR>
 	&quot;elizabot.js&quot; is free software and provided &quot;as is&quot;.
 	It is distributed in the hope that it will be useful,
@@ -215,11 +213,10 @@ Note:   &quot;elizaPostTransforms&quot; is not a standard ELIZA feature and was 
 	
 </TD></TR>
 <TR><TD COLSPAN="2">&nbsp;</TD></TR>
-<TR><TD COLSPAN="2"><B>Download</B>: <A HREF="elizabot.zip">elizabot.zip</A> &nbsp;<SMALL>(ZIP file, 15 KB incl. documentation)</SMALL></TD></TR>
+<TR><TD COLSPAN="2"><B>Download</B>: <A HREF="https://github.com/cttynul/eliza/archive/master.zip">eliza.zip</A> &nbsp;<SMALL>(ZIP file, 15 KB incl. documentation)</SMALL></TD></TR>
 <TR><TD COLSPAN="2">&nbsp;</TD></TR>
 <TR><TD COLSPAN="2">References:</TD></TR>
 <TR VALIGN="top">
-<TD><A NAME="ELIZA"></A>[1]</TD>
 <TD>
     Weizenbaum, Joseph &quot;ELIZA &#150; A Computer Program For the Study of Natural Language
     Communication Between Man and Machine&quot;<BR>
@@ -230,6 +227,8 @@ Note:   &quot;elizaPostTransforms&quot; is not a standard ELIZA feature and was 
 <TR><TD COLSPAN="2"><SMALL>&gt; <A HREF="#top">top of page</A></SMALL></TD></TR>
 <TR><TD COLSPAN="2">&nbsp;</TD></TR>
 <TR><TD COLSPAN="2" STYLE="font-family: arial,helvetica,sans-serif; font-size: 12px;">N. Landsteiner 2005; &lt;<A HREF="http://www.masswerk.at/" TARGET="_blank">http://www.masswerk.at</A>&gt;</SMALL></TD></TR>
+<TR><TD COLSPAN="2" STYLE="font-family: arial,helvetica,sans-serif; font-size: 12px;">cttynul 2020; &lt;<A HREF="https://cttynul.github.io/" TARGET="_blank">https://cttynul.github.io</A>&gt;</SMALL></TD></TR>
+
 <TR><TD COLSPAN="2">&nbsp;</TD></TR>
 </TABLE>
 
