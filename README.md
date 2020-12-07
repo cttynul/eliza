@@ -1,5 +1,5 @@
 # Eliza 
-Traduzione della versione originale, disponibile a questo link [elisabot-js](https://github.com/brandongmwong/elizabot-js), nel linguaggio degli spaghetti e delle pappardelle.
+Traduzione della versione originale, disponibile a [questo link](https://www.masswerk.at/elizabot/), nel linguaggio degli spaghetti e delle pappardelle.
 
 ## What is this?
 
@@ -21,6 +21,10 @@ Bot scritto in Javascript basato sullo storico bot di **Joseph Weizenbaum** e su
 
 > ELIZA è un Chatterbot scritto nel 1966 da Joseph Weizenbaum che fa la parodia di un terapeuta Rogersiano, in buona parte rispondendo al paziente con domande ottenute dalla riformulazione delle affermazioni del paziente stesso. Così, per esempio, alla frase "Mi fa male la testa" il programma può ribattere con "Perché dici che ti fa male la testa?" oppure la risposta a "Mia madre mi odia" potrebbe essere "Chi altro nella tua famiglia ti odia?" 
 
+## I wanna play
+### https://cttynul.github.io/eliza/
+#### Enjoy
+
 ## Usage
 
 ```
@@ -31,9 +35,6 @@ elizabot.bye()            // returns a farewell message
 ```
 
 ## Example output
-
-`# node index.js`
-
 ```
 ======================================================================
                 EEEEEE  LL      IIII  ZZZZZZZ   AAAAA 
